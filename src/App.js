@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import {useDispatch, useSelector} from "react-redux";
+import {increasePoints} from "./features/points/pointsSlice";
 
 function App() {
+    const dispatch = useDispatch();
+    const points = useSelector((state) => state.points.pointsCount);
+
+    const myLogic = (event) => {
+        event.target.style.opacity = 0;
+        dispatch(increasePoints())
+        setTimeout(()=>{event.target.style.opacity = 100;},1000);
+
+    }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <label style={{fontSize: "large"}}>{points} Points</label>
+     <div className="imageHolder">
+         <img onClick={myLogic} className="mainImage" src={'./assets/images/bullseye.png'} />
+         <img onClick={myLogic} className="mainImage0" src={'./assets/images/bullseye.png'} />
+         <img onClick={myLogic} className="mainImage1" src={'./assets/images/bullseye.png'} />
+     </div>
     </div>
   );
 }
