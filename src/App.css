@@ -1,259 +1,520 @@
 .App {
-  text-align: center;
-  overflow: clip;
+    text-align: center;
+    overflow: clip;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 .mainImage {
-  width: 10vmin;
-  height: 10vmin;
-  animation-name: spinning-logo;
-  animation-iteration-count: infinite;
-  animation-duration:15s;
-  animation-timing-function: ease-in-out;
-  position: absolute;
+    width: 10vmin;
+    height: 10vmin;
+    animation-name: spinning-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.mainImage0{
-  width: 10vmin;
-  height: 10vmin;
-  animation-name: spinning-logo0;
-  animation-iteration-count: infinite;
-  animation-duration:7s;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  animation-direction: reverse;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.mainImage0 {
+    width: 10vmin;
+    height: 10vmin;
+    animation-name: spinning-logo0;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    animation-direction: reverse;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 .imageHolder {
-  overflow: clip;
+    overflow: clip;
 }
 
-.mainImage1{
-  width: 10vmin;
-  height: 10vmin;
-  animation-name: spinning-logo1;
-  animation-iteration-count: infinite;
-  animation-duration: 25s;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  animation-direction: alternate-reverse;
-  transition: all;
+.mainImage1 {
+    width: 10vmin;
+    height: 10vmin;
+    animation-name: spinning-logo1;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    animation-direction: alternate-reverse;
+    transition: all;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.mainImage2{
-  width: 10vmin;
-  height: 10vmin;
-  animation-name: spinning-logo2;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  animation-timing-function: ease-in-out;
-  position: absolute;
-  animation-direction: alternate-reverse;
-  transition: all;
+.mainImage2 {
+    width: 10vmin;
+    height: 10vmin;
+    animation-name: spinning-logo2;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    animation-direction: alternate-reverse;
+    transition: all;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
-
 
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spinning-logo {
-  0%{ left: 0; top: 0}
-  10%{left: 50vw; top: 20vh}
-  15%{left: 75vw; top: 90vh}
-  20%{left: 0vw; top: 0vh}
-  25%{left: 33vw; top: 23vh}
-  30%{left: 15vw; top: 5vh}
-  35%{left: 24vw; top: 39vh}
-  40%{left: 10vw; top: 26vh}
-  45%{left: 3vw; top: 34vh}
-  50%{left: 5vw; top: 5vh}
-  55%{left: 60vw; top: 23vh}
-  60%{left: 45vw; top: 26vh}
-  65%{left: 75vw; top: 13vh}
-  70%{left: 35vw; top: 57vh}
-  75%{left: 54vw; top: 45vh}
-  80%{left: 30vw; top: 90vh}
-  85%{left: 24vw; top: 35vh}
-  90%{left: 27vw; top: 35vh}
-  95%{left: 29vw; top: 20vh}
-  100%{left: 0vw; top: 0vh}
+    0% {
+        left: 0;
+        top: 0
+    }
+    10% {
+        left: 50vw;
+        top: 20vh
+    }
+    15% {
+        left: 75vw;
+        top: 90vh
+    }
+    20% {
+        left: 0vw;
+        top: 0vh
+    }
+    25% {
+        left: 33vw;
+        top: 23vh
+    }
+    30% {
+        left: 15vw;
+        top: 5vh
+    }
+    35% {
+        left: 24vw;
+        top: 39vh
+    }
+    40% {
+        left: 10vw;
+        top: 26vh
+    }
+    45% {
+        left: 3vw;
+        top: 34vh
+    }
+    50% {
+        left: 5vw;
+        top: 5vh
+    }
+    55% {
+        left: 60vw;
+        top: 23vh
+    }
+    60% {
+        left: 45vw;
+        top: 26vh
+    }
+    65% {
+        left: 75vw;
+        top: 13vh
+    }
+    70% {
+        left: 35vw;
+        top: 57vh
+    }
+    75% {
+        left: 54vw;
+        top: 45vh
+    }
+    80% {
+        left: 30vw;
+        top: 90vh
+    }
+    85% {
+        left: 24vw;
+        top: 35vh
+    }
+    90% {
+        left: 27vw;
+        top: 35vh
+    }
+    95% {
+        left: 29vw;
+        top: 20vh
+    }
+    100% {
+        left: 0vw;
+        top: 0vh
+    }
 }
+
 @keyframes spinning-logo0 {
-  0%{left: 15vw; top: 50vh}
-  10%{left: 50vw; top: 20vh}
-  15%{left: 75vw; top: 90vh}
-  20%{left: 0vw; top: 0vh}
-  25%{left: 33vw; top: 23vh}
-  30%{left: 30vw; top: 40vh}
-  35%{left: 24vw; top: 35vh}
-  40%{left: 5vw; top: 10vh}
-  45%{left: 60vw; top: 20vh}
-  50%{left: 5vw; top: 5vh}
-  55%{left: 15vw; top: 35vh}
-  60%{left: 10vw; top: 10vh}
-  65%{left: 15vw; top: 74vh}
-  70%{left: 25vw; top: 30vh}
-  75%{left: 90vw; top: 23vh}
-  80%{left: 40vw; top: 3vh}
-  85%{left: 15vw; top: 35vh}
-  90%{left: 18vw; top: 10vh}
-  95%{left: 15vw; top: 35vh}
-  100%{left: 0vw; top: 0vh}
+    0% {
+        left: 15vw;
+        top: 50vh
+    }
+    10% {
+        left: 50vw;
+        top: 20vh
+    }
+    15% {
+        left: 75vw;
+        top: 90vh
+    }
+    20% {
+        left: 0vw;
+        top: 0vh
+    }
+    25% {
+        left: 33vw;
+        top: 23vh
+    }
+    30% {
+        left: 30vw;
+        top: 40vh
+    }
+    35% {
+        left: 24vw;
+        top: 35vh
+    }
+    40% {
+        left: 5vw;
+        top: 10vh
+    }
+    45% {
+        left: 60vw;
+        top: 20vh
+    }
+    50% {
+        left: 5vw;
+        top: 5vh
+    }
+    55% {
+        left: 15vw;
+        top: 35vh
+    }
+    60% {
+        left: 10vw;
+        top: 10vh
+    }
+    65% {
+        left: 15vw;
+        top: 74vh
+    }
+    70% {
+        left: 25vw;
+        top: 30vh
+    }
+    75% {
+        left: 90vw;
+        top: 23vh
+    }
+    80% {
+        left: 40vw;
+        top: 3vh
+    }
+    85% {
+        left: 15vw;
+        top: 35vh
+    }
+    90% {
+        left: 18vw;
+        top: 10vh
+    }
+    95% {
+        left: 15vw;
+        top: 35vh
+    }
+    100% {
+        left: 0vw;
+        top: 0vh
+    }
 
 
 }
+
 @keyframes spinning-logo1 {
-  0%{ left: 0; top: 0}
-  10%{left: 50vw; top: 20vh}
-  15%{left: 75vw; top: 90vh}
-  20%{left: 0vw; top: 0vh}
-  25%{left: 33vw; top: 23vh}
-  30%{left: 15vw; top: 50vh}
-  35%{left: 24vw; top: 35vh}
-  40%{left: 5vw; top: 10vh}
-  45%{left: 90vw; top: 23vh}
-  50%{left: 5vw; top: 5vh}
-  55%{left: 30vw; top: 40vh}
-  60%{left: 10vw; top: 10vh}
-  65%{left: 60vw; top: 20vh}
-  70%{left: 25vw; top: 30vh}
-  75%{left: 35vw; top: 55vh}
-  80%{left: 40vw; top: 3vh}
-  85%{left: 15vw; top: 35vh}
-  90%{left: 18vw; top: 10vh}
-  95%{left: 15vw; top: 20vh}
-  100%{left: 0vw; top: 0vh}
+    0% {
+        left: 0;
+        top: 0
+    }
+    10% {
+        left: 50vw;
+        top: 20vh
+    }
+    15% {
+        left: 75vw;
+        top: 90vh
+    }
+    20% {
+        left: 0vw;
+        top: 0vh
+    }
+    25% {
+        left: 33vw;
+        top: 23vh
+    }
+    30% {
+        left: 15vw;
+        top: 50vh
+    }
+    35% {
+        left: 24vw;
+        top: 35vh
+    }
+    40% {
+        left: 5vw;
+        top: 10vh
+    }
+    45% {
+        left: 90vw;
+        top: 23vh
+    }
+    50% {
+        left: 5vw;
+        top: 5vh
+    }
+    55% {
+        left: 30vw;
+        top: 40vh
+    }
+    60% {
+        left: 10vw;
+        top: 10vh
+    }
+    65% {
+        left: 60vw;
+        top: 20vh
+    }
+    70% {
+        left: 25vw;
+        top: 30vh
+    }
+    75% {
+        left: 35vw;
+        top: 55vh
+    }
+    80% {
+        left: 40vw;
+        top: 3vh
+    }
+    85% {
+        left: 15vw;
+        top: 35vh
+    }
+    90% {
+        left: 18vw;
+        top: 10vh
+    }
+    95% {
+        left: 15vw;
+        top: 20vh
+    }
+    100% {
+        left: 0vw;
+        top: 0vh
+    }
 
 
 }
 
 @keyframes spinning-logo2 {
-  0%{ left: 0; top: 0}
-  10%{left: 30vw; top: 20vh}
-  15%{left: 23vw; top: 90vh}
-  20%{left: 0vw; top: 0vh}
-  25%{left: 43vw; top: 23vh}
-  30%{left: 53vw; top: 50vh}
-  35%{left: 23vw; top: 35vh}
-  40%{left: 10vw; top: 50vh}
-  45%{left: 90vw; top: 20vh}
-  50%{left: 95vw; top: 40vh}
-  55%{left: 70vw; top: 60vh}
-  60%{left: 60vw; top: 80vh}
-  65%{left: 89vw; top: 90vh}
-  70%{left: 60vw; top: 70vh}
-  75%{left: 40vw; top: 50vh}
-  80%{left: 85vw; top: 36vh}
-  85%{left: 75vw; top: 47vh}
-  90%{left: 20vw; top: 34vh}
-  95%{left: 10vw; top: 23vh}
-  100%{left: 0vw; top: 0vh}
+    0% {
+        left: 0;
+        top: 0
+    }
+    10% {
+        left: 30vw;
+        top: 20vh
+    }
+    15% {
+        left: 23vw;
+        top: 90vh
+    }
+    20% {
+        left: 0vw;
+        top: 0vh
+    }
+    25% {
+        left: 43vw;
+        top: 23vh
+    }
+    30% {
+        left: 53vw;
+        top: 50vh
+    }
+    35% {
+        left: 23vw;
+        top: 35vh
+    }
+    40% {
+        left: 10vw;
+        top: 50vh
+    }
+    45% {
+        left: 90vw;
+        top: 20vh
+    }
+    50% {
+        left: 95vw;
+        top: 40vh
+    }
+    55% {
+        left: 70vw;
+        top: 60vh
+    }
+    60% {
+        left: 60vw;
+        top: 80vh
+    }
+    65% {
+        left: 89vw;
+        top: 90vh
+    }
+    70% {
+        left: 60vw;
+        top: 70vh
+    }
+    75% {
+        left: 40vw;
+        top: 50vh
+    }
+    80% {
+        left: 85vw;
+        top: 36vh
+    }
+    85% {
+        left: 75vw;
+        top: 47vh
+    }
+    90% {
+        left: 20vw;
+        top: 34vh
+    }
+    95% {
+        left: 10vw;
+        top: 23vh
+    }
+    100% {
+        left: 0vw;
+        top: 0vh
+    }
 
 
 }
 
 .imageHolder .disabled {
-  pointer-events: none;
-  opacity: 0;
+    pointer-events: none;
+    opacity: 0;
 }
 
 .App .info {
-  display: flex;
-  gap: 15vw;
-  justify-content: center;
+    display: flex;
+    gap: 15vw;
+    justify-content: center;
 }
-.App .info #pointsLabel{
-  font-size: 3vw;
-  color: tomato;
-  font-family: Tahoma, sans-serif;
+
+.App .info #pointsLabel {
+    font-size: 3vw;
+    color: tomato;
+    font-family: Tahoma, sans-serif;
 }
-.App .info #counterLabel{
-  font-size: 2vw;
-  color: tomato;
-  font-family: Tahoma, sans-serif;
+
+.App .info #counterLabel {
+    font-size: 2vw;
+    color: tomato;
+    font-family: Tahoma, sans-serif;
 }
-.App .info #startButton{
-  font-size: 3vw;
-  font-variant: all-small-caps;
-  background-color: tomato;
-  font-family: Tahoma, sans-serif;
-  color: white;
+
+.App .info #startButton {
+    font-size: 3vw;
+    font-variant: all-small-caps;
+    background-color: tomato;
+    font-family: Tahoma, sans-serif;
+    color: white;
 }
 
 .App .count .countLabel {
-  font-size: 8vw;
-  color: tomato;
-  font-family: Tahoma, sans-serif;
-  transition: all 1s;
+    font-size: 8vw;
+    color: tomato;
+    font-family: Tahoma, sans-serif;
+    transition: all 1s;
 }
 
 .App .count .countAnim {
-  animation-name: countAnim;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
+    animation-name: countAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
 
 @keyframes countAnim {
-  0% {font-size: 10vw}
-  25%{font-size: 20vw}
-  35%{font-size: 8vw}
-  50%{font-size: 20vw}
-  60%{font-size: 8vw}
-  75%{font-size: 20vw}
-  85%{font-size: 8vw}
+    0% {
+        font-size: 10vw
+    }
+    25% {
+        font-size: 20vw
+    }
+    35% {
+        font-size: 8vw
+    }
+    50% {
+        font-size: 20vw
+    }
+    60% {
+        font-size: 8vw
+    }
+    75% {
+        font-size: 20vw
+    }
+    85% {
+        font-size: 8vw
+    }
 }

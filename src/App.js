@@ -2,17 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
 import {increasePoints} from "./features/points/pointsSlice";
-import {decreaseCount} from "./features/points/countSlice";
 
 let audio = new Audio('./assets/sounds/correct.mp3');
 
 
 function App() {
 
-
     const dispatch = useDispatch();
     const points = useSelector((state) => state.points.pointsCount);
-    const count = useSelector((state) => state.count.value);
 
     const myLogic = (event) => {
         audio.currentTime = 0;
@@ -90,11 +87,10 @@ function App() {
     }
 
 
-    return (
-        <div className="App">
+    return (<div className="App">
             <div className="info">
                 <label id="pointsLabel">{points} Points</label>
-                <label id="counterLabel" >60 Seconds Remaining</label>
+                <label id="counterLabel">60 Seconds Remaining</label>
                 <button id="startButton" onClick={startGame}>Start</button>
             </div>
             <div className="count">
@@ -111,8 +107,7 @@ function App() {
                 <img id="b4" draggable="false" onClick={myLogic} className="mainImage2 disabled"
                      src={'./assets/images/bullseye.png'}/>
             </div>
-        </div>
-    );
+        </div>);
 }
 
 export default App;
