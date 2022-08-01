@@ -13,9 +13,9 @@ function App() {
     const myLogic = (event) => {
         audio.currentTime = 0;
         audio.play();
-        event.target.style.opacity = 0;
+        event.target.classList.add("disabled");
         dispatch(increasePoints())
-        setTimeout(()=>{event.target.style.opacity = 100;},1000);
+        setTimeout(()=>{event.target.classList.remove("disabled")},1000);
 
     }
 
