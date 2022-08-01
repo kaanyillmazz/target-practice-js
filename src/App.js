@@ -93,9 +93,9 @@ function App() {
     return (
         <div className="App">
             <div className="info">
-                <label style={{fontSize: "50px"}}>{points} Points</label>
-                <label id="counterLabel" style={{fontSize: "50px"}}>60 Seconds Remaining</label>
-                <button onClick={startGame}>Start</button>
+                <label id="pointsLabel">{points} Points</label>
+                <label id="counterLabel" >60 Seconds Remaining</label>
+                <button id="startButton" onClick={startGame}>Start</button>
             </div>
             <div className="count">
                 <label className="countLabel" id="countdown">3</label>
